@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+// 1. Variables
+@import
+  'abstracts/variables',
+  'abstracts/fonts',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Base
+@import
+  'base/core',
+  'base/typography';
+
+// 3. Layout
+@import
+  'layout/grid';
+
+// 4. Components
+@import
+  'components/gridoverlay';
+
+/* The side navigation menu */
+body {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    overflow-x:hidden;
+    background-color: #d1bea546;
+    color: #0B277B;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    
+}
+h2{
+    font-size: 2rem;
+    
+    font-style: bold;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #575858;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.fa-bars{
+    float: left;
+    margin: 2%;
+    
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #61B6F9;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+//content
+.container{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    float: left;
+}
+.click{
+    width:80px;
+    height:80px;
+    background:#0B277B;
+    margin:20px;
+    transform:rotate(-45deg);
+    
+
+}
+
+.click p{
+    transform:rotate(45deg);
+    color: #E5B166;
+    font-size: 1.2rem;
+}
+
+.balk{
+
+    width:130%;
+    transform:rotate(2deg);
+    height: 2%;
+    margin-top: 2%;
+    margin-left: -10%;
+}
+
+.balk1{
+    width:130%;
+    transform:rotate(-2deg);
+    height: 2%;
+    margin-left: -10%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+
+.color{
+    float: left;
+    position: relative;
+    
+    
+    margin-top: -1%;
+    width: 16.666%;
+    height: 150px;
+
+}
+
+.color p{
+    margin-left:-4%;
+    text-align: center;
+    color: #d1bea5;
+    font-size: 2rem
+    
+}
+
+#rotate{
+    transform:rotate(2deg);
+    width:110%;
+    margin-left:-4%;
+    margin-top:1%;
+
+    
+}
+
+.donkerbruin{
+    background: #9B7B4A;
+}
+
+.beige{
+    background: #E5B166;
+}
+
+.grijs{
+    background: #575858;
+}
+
+.lichtblauw{
+    background: #61B6F9;
+}
+
+.blauw{
+    background:#4A6EAA ;
+}
+
+.donkerblauw{
+    background:#0B277B ;
+}
+
+.all-icons{
+    margin-left:13%;
+}
+
+.Icons{
+    margin:2%;
+    float:left;
+    margin-left:5%;
+    
+    
+}
+.icons span{
+    display: block;
+    
+}
+.icon-font{
+    margin:0;
+    font-size: 1.5rem;
+}
+
+.bmw{
+    position: relative;
+    margin-left:-38%;
+    margin-top: -2%;
+    margin-bottom:-3.5%;
+    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 97%, 0% 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 97%, 0% 100%)
+}
+
+.img-text{
+    position: absolute;
+    bottom: 3%;
+    color: white;
+    font-style: bold;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E5B166;
+    text-shadow: 2px 2px #575858;
+}
+
+input[type=text] {
+    background-color: rgb(238, 223, 203);
+    border: none;
+    width: 20%;
+    font-size: 1.5rem;
+    
+}
+input[type=text]:focus {
+    border-bottom: 3px solid #0B277B;
+}
+
+.font1{
+    
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+.font2{
+    font-family: Georgia;
+    font-size: 1.5rem;
+}
+
