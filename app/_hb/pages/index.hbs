@@ -1,10 +1,6 @@
 {{!-- pages/index.hbs --}}
 
-{{#> layouts/base title="Home | New Media Development | Artevelde University College Ghent" }}
-
-  {{#*inline "head-block"}}
-    <link rel="stylesheet" media="all" href="assets/css/main.css">
-  {{/inline}}
+{{#> layouts/base title="Home | New Media Development | Artevelde University College Ghent" pathToRoot="./" }}
 
   {{#*inline "content-block"}}
     <div class="fb-grid__container">
@@ -24,9 +20,6 @@
   {{/inline}}
 
   {{#*inline "scripts-block"}}
-    <!-- build:js assets/js/main.min.js -->
-    <script src="assets/js/main.js"></script>
-    <!-- endbuild -->
   {{/inline}}
-  
+
 {{/layouts/base}}

@@ -1,9 +1,8 @@
 {{!-- pages/index.hbs --}}
 
-{{#> layouts/base title="Styleguide | New Media Development | Artevelde University College Ghent" description="Styleguide for the course Mobile Development I" }}
+{{#> layouts/base title="Styleguide | New Media Development | Artevelde University College Ghent" description="Styleguide for the course Mobile Development I" pathToRoot="../" }}
 
   {{#*inline "head-block"}}
-    <link rel="stylesheet" media="all" href="../assets/css/main.css">
   {{/inline}}
 
   {{#*inline "content-block"}}
@@ -19,9 +18,6 @@
   {{/inline}}
 
   {{#*inline "scripts-block"}}
-    <!-- build:js assets/js/main.min.js -->
-    <script src="../assets/js/main.js"></script>
-    <!-- endbuild -->
   {{/inline}}
 
 {{/layouts/base}}

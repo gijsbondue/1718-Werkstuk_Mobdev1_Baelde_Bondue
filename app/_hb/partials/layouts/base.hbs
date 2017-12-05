@@ -22,6 +22,8 @@
 
     {{> includes/head-icons}}
 
+    <link rel="stylesheet" media="all" href="{{#if pathToRoot}}{{pathToRoot}}{{/if}}assets/css/main.css">
+
     {{#> head-block}}
       {{!-- Custom <head> content per page. --}}
     {{/head-block}}
@@ -32,6 +34,10 @@
     {{#> content-block}}
       {{!-- Content for the page goes here. --}}
     {{/content-block}}
+
+    <!-- build:js assets/js/main.min.js -->
+    <script src="{{#if pathToRoot}}{{pathToRoot}}{{/if}}assets/js/main.js"></script>
+    <!-- endbuild -->
 
     {{#> scripts-block}}
       {{!-- Custom scripts per pag.e --}}
