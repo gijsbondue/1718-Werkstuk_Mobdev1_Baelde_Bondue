@@ -2,10 +2,14 @@
 
 {{#> layouts/base title="Home | New Media Development | Artevelde University College Ghent" }}
 
+  {{#*inline "head-block"}}
+    <link rel="stylesheet" media="all" href="assets/css/main.css">
+  {{/inline}}
+
   {{#*inline "content-block"}}
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+    <div class="fb-grid__container">
+      <div class="fb-grid__row">
+        <div class="fb-grid__col-12">
           <div class="article">
             <h1>This heading H1 - The quick brown fox.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus in nibh ac vestibulum. Integer accumsan vestibulum efficitur. Sed non tellus orci. Donec maximus eleifend tempor. Duis molestie vehicula metus, vitae finibus ex feugiat vitae. Quisque sagittis metus id ornare ultrices. Donec laoreet urna a ligula efficitur viverra. Donec dui lectus, fermentum vulputate nunc aliquam, dictum accumsan lectus. Morbi finibus, lacus quis lobortis varius, ipsum libero porta tortor, sed cursus urna risus in elit. Aenean rutrum ante est, at molestie velit luctus vitae. Sed vel leo vel metus finibus volutpat in quis nibh. Morbi magna justo, fermentum condimentum felis posuere, placerat congue elit. Morbi rutrum luctus condimentum. Maecenas elit est, convallis quis consequat at, fringilla a libero.</p>
@@ -19,4 +23,10 @@
     </div>
   {{/inline}}
 
+  {{#*inline "scripts-block"}}
+    <!-- build:js assets/js/main.min.js -->
+    <script src="assets/js/main.js"></script>
+    <!-- endbuild -->
+  {{/inline}}
+  
 {{/layouts/base}}
