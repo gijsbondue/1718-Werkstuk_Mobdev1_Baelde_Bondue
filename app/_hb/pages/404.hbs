@@ -1,10 +1,22 @@
 {{!-- pages/404.hbs --}}
 
 {{#> layouts/base title="404 | New Media Development | Artevelde University College Ghent" }}
+
+  {{#*inline "head-block"}}
+    <link rel="stylesheet" media="all" href="assets/css/main.css">
+  {{/inline}}
+
   {{#*inline "content-block"}}
-    <div class="intro">
-      <h1>404</h1>
-      <p>Hello, is it me you are looking for!</p>
+    <div class="fb-grid__container">
+      <div class="fb-grid__row">
+        <div class="fb-grid__col-12">
+          <div class="intro">
+            <h1>404</h1>
+            <p>Hello, is it me you are looking for!</p>
+          </div>
+        </div>
+      </div>
     </div>
   {{/inline}}
+  
 {{/layouts/base}}
