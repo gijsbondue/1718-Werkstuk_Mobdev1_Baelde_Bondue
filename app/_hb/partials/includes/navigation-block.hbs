@@ -1,0 +1,41 @@
+{{!-- 
+   includes/navigation-block.hbs
+
+navigation
+--}}
+<div class="navigation">
+  <div class="navigation_links_bar">
+    <script>
+      const listLinks = 
+              [
+                {
+                  "hyperlink": "link",
+                  "naam": "Home"
+                },
+                {
+                  "hyperlink": "link",
+                  "naam": "Projects"
+                },    {
+                  "hyperlink": "link",
+                  "naam": "About"
+                },
+                {
+                  "hyperlink": "link",
+                  "naam": "Blog"
+                },
+                {
+                  "hyperlink": "link",
+                  "naam": "login"
+                },
+                {
+                  "hyperlink": "link",
+                  "naam": "Contact"
+                }
+              ]
+      {{#each listLinks}}
+        <h1>{{naam}}</h1>
+      {{/each}}        
+    </script>
+  </div> 
+  <div class="navigation_name_bar"></div>
+</div>

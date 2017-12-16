@@ -5,7 +5,8 @@
   'abstracts/variables',
   'abstracts/fonts',
   'abstracts/functions',
-  'abstracts/mixins';
+  'abstracts/mixins',
+  'abstracts/variables/divLine';
 
 // 2. Base
 @import
@@ -14,8 +15,10 @@
 
 // 3. Layout
 @import
-  'layout/grid';
+  'layout/grid',
+  'layout/navigation';
 
 // 4. Components
 @import
-  'components/gridoverlay';
+  'components/gridoverlay',
+  'components/WithALine';

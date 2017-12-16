@@ -1,0 +1,21 @@
+//colors
+$primary-background-color: #3a3c40;
+$secundary-background-color: #222735;
+
+//navigation
+.navigation{
+  position:fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation_links_bar {
+  background-color: $primary-background-color;
+  height:35px;
+}
+.navigation_name_bar {
+  background-color: $secundary-background-color;
+  height: 60px;
+}

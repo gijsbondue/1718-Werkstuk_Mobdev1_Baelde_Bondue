@@ -12,13 +12,13 @@ h5,
 h6 {
   font-family: $headings-font-family;
 
-  @include type-setting(1);
+  @include type-setting(6);
 
   margin: #{$base-line-height}rem 0;
 }
 
 h1 {
-  @include type-setting(6);
+  @include type-setting(9);
 }
 
 h2 {
