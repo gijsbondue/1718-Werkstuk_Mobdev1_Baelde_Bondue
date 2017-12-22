@@ -16,10 +16,11 @@
 // 3. Layout
 @import
   'layout/grid',
-  'layout/navigation';
-  
+  'layout/navigation',
+  'layout/footer',
+  'layout/gridprojects';
 // 4. Components
 @import
   'components/gridoverlay',
-  'components/WithALine';
+  'components/withALine';
  

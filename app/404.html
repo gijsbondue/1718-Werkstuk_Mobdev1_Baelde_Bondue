@@ -35,19 +35,35 @@
     <meta name="application-name" content="GDM">
     <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" media="all" href="./assets/css/main.css">
+    <link rel="stylesheet" media="all" href="./../assets/css/main.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+    
+
+  </head>
+  <body>
     <div class="navigation">
       <div class="navigation_links_bar">
+        <script type="text/x-handlebars-template" id="navigation_links">
+            {{#each this}}
+            <a href={{hyperlink}} class="links_results">{{naam}}</a>
+            {{/each}}
+        </script> 
+    
+        <div id="links_result">
+        </div>
+    
         <script>
           const listLinks = 
                   [
                     {
-                      "hyperlink": "link",
+                      "hyperlink": "../index.html",
                       "naam": "Home"
                     },
+                    //hyperlinks kloppen nog niet, als je tweemaal klikt ga je een map verder.
                     {
-                      "hyperlink": "link",
+                      "hyperlink": "pages/projects.html",
                       "naam": "Projects"
                     },    {
                       "hyperlink": "link",
@@ -59,20 +75,23 @@
                     },
                     {
                       "hyperlink": "link",
-                      "naam": "login"
+                      "naam": "Login"
                     },
                     {
                       "hyperlink": "link",
                       "naam": "Contact"
                     }
-                  ]
+                  ];
+                  
+          const htmlTemplate = document.getElementById("navigation_links").innerHTML;
+          const render = Handlebars.compile(htmlTemplate);
+          document.getElementById('links_result').innerHTML = render(listLinks);
         </script>
       </div> 
-      <div class="navigation_name_bar"></div>
-    </div>
-  </head>
-  <body>
-
+      <div class="navigation_name_bar">
+        <span>Shine</span>
+      </div>
+    </div>        
     <div class="fb-grid__container">
       <div class="fb-grid__row">
         <div class="fb-grid__col-12">
@@ -84,9 +103,19 @@
       </div>
     </div>
 
+    
+    <div id="footer">
+      <div id="footer_above"></div>
+      <div id="footer_bottom">
+        <div class="comment">Artevelde hogeschool - Hoogpoort 15 - 9000 gent</div>
+        <div class="comment">Disclaimer</div>
+      </div>
+    </div>
 
     <!-- build:js assets/js/main.min.js -->
-    <script src="./assets/js/main.js"></script>
+    
+    <script src=" ./
+                  assets/js/main.js"></script>
     <!-- endbuild -->
 
 
@@ -97,6 +126,5 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-XXXXX-X', 'auto');
       ga('send', 'pageview');
-    </script>
-  </body>
+    </script>  </body>
 </html>

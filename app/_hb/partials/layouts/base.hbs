@@ -22,22 +22,25 @@
 
     {{> includes/head-icons}}
 
-    <link rel="stylesheet" media="all" href="{{#if pathToRoot}}{{pathToRoot}}{{/if}}assets/css/main.css">
+    <link rel="stylesheet" media="all" href="{{#if pathToRoot}}{{pathToRoot}}{{/if}}../assets/css/main.css">
 
-    {{> includes/navigation-block}} 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
     
+
   </head>
   <body>
-    {{#> navigation-block}}
-        {{!--andere navigation--}}
-    {{/navigation-block}}
-
+    {{> includes/navigation-block}}  
+        
     {{#> content-block}}
       {{!-- Content for the page goes here. --}}
     {{/content-block}} 
 
+    {{> includes/footer-block}}     
+ 
 
     <!-- build:js assets/js/main.min.js -->
+    
     <script src="{{#if pathToRoot}}{{pathToRoot}}{{/if}}assets/js/main.js"></script>
     <!-- endbuild -->
 
@@ -46,6 +49,5 @@
     {{/scripts-block}}
 
     {{> includes/google-analytics}}
-
   </body>
 </html>

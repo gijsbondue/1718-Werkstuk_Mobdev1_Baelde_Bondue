@@ -1,6 +1,6 @@
 //colors
-$primary-background-color: #3a3c40;
-$secundary-background-color: #222735;
+$primary-background-color: $gray1;
+$secundary-background-color: $gray2;
 
 //navigation
 .navigation{
@@ -12,11 +12,34 @@ $secundary-background-color: #222735;
 }
 
 .navigation_links_bar {
-  background-color: $primary-background-color;
+  background-color:$secundary-background-color;
   height:35px; 
 }
 .navigation_name_bar {
-  background-color: $secundary-background-color;
+  background-color:  $primary-background-color;
   height: 60px;
+  margin-left:0; 
+
+  span{
+    color: #fff;    
+    font-size: 48px;
+    margin-left: 8.3%;    
+  }
 }
-//test
+#links_result{
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    
+  }
+  a:last-of-type {
+    margin-right: 8.3%;
+
+  }
+  
+
+}
